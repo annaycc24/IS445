@@ -1,0 +1,17 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "url": "building_inventory.csv", "formatType": "csv"
+    },
+    "mark": "area",
+    "encoding": {
+        "x": {
+          "field": "Year Constructed"
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "Square Footage",
+          "type": "quantitative"
+        }
+    }
+}
